@@ -1,0 +1,338 @@
+$green-gradient: linear-gradient(#3cf166, #17de24);
+$orange-gradient: linear-gradient(#f5e144, #ffa30f);
+$red-gradient: linear-gradient(#fa2020, #ef0049);
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == desktop-sm {
+    @media (max-width: 767px) {
+      @content;
+    }
+  }
+  @if $breakpoint == desktop-md {
+    @media (max-width: 991px) {
+      @content;
+    }
+  }
+  @if $breakpoint == desktop-lg {
+    @media (max-width: 1199px) {
+      @content;
+    }
+  }
+  @if $breakpoint == desktop-xl {
+    @media (max-width: 1500px) {
+      @content;
+    }
+  }
+  @if $breakpoint == desktop-xxl {
+    @media (max-width: 1800px) {
+      @content;
+    }
+  }
+}
+
+@mixin respond-h($breakpoint) {
+  @if $breakpoint == height-sm {
+    @media (max-height: 600px) {
+      @content;
+    }
+  }
+}
+
+html {
+  font-size: 62.5%;
+  //font-size: 68%;
+  @include respond(desktop-xl) {
+    font-size: 58%;
+  }
+
+  @include respond(desktop-md) {
+    font-size: 53%;
+  }
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  // font-family: 'Lato', sans-serif;
+  // font-family: 'Nunito Sans', sans-serif;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+}
+
+.sidebar {
+  height: 100%;
+  min-width: 24.4rem;
+  padding: 4.2rem 3rem;
+  box-shadow: 0 2px 9px rgba(0, 0, 0, 0.06);
+  z-index: 1000;
+
+  &-body {
+    height: 100%;
+    overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+
+    &::-webkit-scrollbar {
+      /* WebKit */
+      width: 0;
+      height: 0;
+    }
+  }
+
+  &-info {
+    &-img {
+      width: 6.7rem;
+      height: 6.7rem;
+      border-radius: 50%;
+    }
+
+    &-name {
+      padding-left: 1.3rem;
+      font-size: 1.7rem;
+      font-weight: 600;
+      color: #002257;
+
+      & span {
+        display: inline-block;
+        width: 0.7rem;
+        height: 0.7rem;
+        margin-left: 0.7rem;
+        background-color: #2ebd41;
+        border-radius: 50%;
+      }
+    }
+
+    &-title {
+      padding-left: 1.3rem;
+      font-size: 1.35rem;
+      font-weight: 600;
+      color: #969ead;
+    }
+  }
+
+  &-group {
+    padding-top: 4rem;
+
+    &:nth-of-type(2),
+    &:nth-of-type(3) {
+      padding-top: 3.5rem;
+    }
+
+    & .list-unstyled {
+      margin: 0;
+    }
+
+    h3 {
+      margin: 0;
+      font-size: 1.2rem;
+      font-weight: 700;
+      line-height: 1.42;
+      color: #687181;
+    }
+
+    & select {
+      height: 3.5rem;
+      width: 100%;
+      margin-top: 0.7rem;
+      padding: 0 0.7rem;
+      font-size: 1.2rem;
+      border-color: #eaebee;
+      color: #002257;
+      border-radius: 3px;
+    }
+
+    & .list-unstyled {
+      & li {
+        & a {
+          display: inline-block;
+          height: 1.8rem;
+          margin-top: 1.7rem;
+          text-decoration: none;
+          font-size: 1.3rem;
+          line-height: 1.69;
+          color: #002257;
+        }
+
+        &.active {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+
+.results {
+  //height: 100%;
+  width: 100%;
+  background-color: #f8f9fb;
+  padding: 4.1rem 4.6rem 2.8rem 3.4rem;
+
+  &-header {
+    & .back {
+      font-size: 15px;
+      font-weight: 700;
+      color: #1a173b;
+
+      & i {
+        font-size: 2rem;
+      }
+    }
+    &-logout {
+      height: 2rem;
+      margin: 0;
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #6e747e;
+
+      & i {
+        margin-top: 0;
+        margin-left: -3px;
+        font-size: 1.8rem;
+        color: #6e747e;
+      }
+    }
+
+    & h2 {
+      height: 3.7rem;
+      margin: 0;
+      margin-bottom: 2.2rem;
+      margin-top: .5rem;
+      font-size: 2.7rem;
+      font-weight: 600;
+      line-height: 1.37;
+      color: #1a173b;
+    }
+
+    & h3 {
+      margin-bottom: 2.2rem;
+      font-weight: bold;
+      line-height: 2.31;
+      color: #1a173b;
+    }
+  }
+
+  &-body {
+    font-family: 'Lato', sans-serif;
+
+    & .employee {
+      width: 82rem;
+      height: 50rem;
+      padding: 3.5rem;
+      @include respond(desktop-lg) {
+        width: 100%;
+      }
+
+      &-header {
+
+        &-info {
+          white-space: nowrap;
+          margin-bottom: 1.4rem;
+          & img {
+            width: 4.8rem;
+            height: 4.8rem;
+            border-radius: 50%;
+          }
+
+          p {
+            display: inline-block;
+            margin-left: 1.2rem;
+            font-size: 1.8rem;
+            font-weight: bold;
+            line-height: 1.22;
+            letter-spacing: 0.12px;
+            color: #1a173b;
+          }
+
+          .score {
+            width: 63.1px;
+            height: 30px;
+            border: solid 1.5px #0077ff;
+            border-radius: 3px;
+
+            & span {
+              font-size: 1.4rem;
+              font-weight: 700;
+              color: #0077ff;
+            }
+          }
+        }
+
+        & hr {
+          display: inline-block;
+          width: 40%;
+          min-width: 20rem;
+          height: 1.5px;
+          background-color: rgba(223, 226, 229, 0.87);
+        }
+
+        & .rating {
+
+          & p {
+            font-size: 1.7rem;
+            font-weight: 700;
+            color: #1a173b;
+          }
+
+          & .stars {
+            margin-left: 3.2rem;
+            margin-bottom: -.4rem;
+
+            & i {
+              font-size: 3rem;
+              color: #ffbb41;
+            }
+          }
+        }
+
+        & .input-group {
+          margin-top: 3rem;
+          margin-bottom: 2rem;
+
+          & textarea {
+            height: 17.6rem;
+            padding: 1.5rem;
+            font-size: 1.4rem;
+            color: #5e636b;
+
+            &::placeholder {
+              font-size: 1.4rem;
+              line-height: 1.43;
+              color: #5e636b;
+            }
+          }
+        }
+
+        & .btn-custom-confirm {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 15rem;
+          height: 4rem;
+          padding: 0 1.6rem;
+          font-size: 1.5rem;
+          background-color: #0077ff;
+          color: #FFF;
+          border: none;
+          border-radius: 5px;
+
+          & i {
+            font-size: 2.5rem;
+          }
+        }
+
+        & p {
+          margin-top: 2rem;
+            a {
+            font-size: 1.4rem;
+          }
+        }
+      }
+
+      
+    }
+  }
+}

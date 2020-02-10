@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boilerplate</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Nunito+Sans:300,400|Open+Sans:400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <!-- MAIN WRAPPER -->
+    <main class="main d-flex">
+
+        <!-- SIDEBAR SECTION-->
+        <div class="sidebar d-flex flex-column bg-white">
+            <div class="sidebar-info d-flex align-items-center">
+                <img class="sidebar-info-img" src="img/profile-pic.png" alt="profile picture">
+                <div class="d-flex flex-column">
+                    <p class="sidebar-info-name m-0">Andrew<span class="align-middle"></span></p>
+                    <p class="sidebar-info-title m-0">Boss</p>
+                </div>
+            </div>
+
+            <div class="sidebar-group">
+                <h3>GIVE FEEDBACK</h3>
+                <select name="sidebar-select" id="sidebar-select">
+                    <option value="one">To you people</option>
+                </select>
+            </div>
+
+            <div class="sidebar-body">
+                <div class="sidebar-group">
+                    <h3>TEAMS</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Results </a></li>
+                        <li><a href="#">Export results </a></li>
+                        <li><a href="#">Manage teams </a></li>
+                        <li><a href="#">Create a new team </a></li>
+                    </ul>
+                </div>
+    
+                <div class="sidebar-group">
+                    <h3>PEOPLE</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Results </a></li>
+                        <li class="active"><a href="#">Export results </a></li>
+                        <li><a href="#">Manage people</a></li>
+                        <li><a href="#">Invite new people </a></li>
+                    </ul>
+                </div>
+    
+                <div class="sidebar-group">
+                    <h3>ME</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Results </a></li>
+                        <li><a href="#">My account </a></li>
+                    </ul>
+                </div>
+    
+                <div class="sidebar-group">
+                    <h3>ADMIN</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#">User/team register </a></li>
+                        <li><a href="#">Company Profile </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- RESULTS SECTION -->
+        <div class="results">
+            <div class="results-header">
+                <div class="results-header-logout d-flex justify-content-between">
+                    <p class="back mb-0 d-flex align-items-center"><i class="material-icons">keyboard_arrow_left</i> Back</p>
+                    <p class="text-right align-middle">Logout <i class="material-icons align-middle">exit_to_app</i></p>
+                </div>
+                <h2 class="mt-1 align-middle">Give feedback</h2>
+                <h3>To all my employees</h3>
+            </div>
+
+            <div class="results-body">
+                <div class="employee bg-white">
+                    <div class="employee-header">
+                        <div class="employee-header-info d-flex justify-content-between align-items-center">
+                            <div class="personal-info">
+                                <img src="img/p-07.png" alt="#">
+                                <p>Rebeca Lee</p>
+                            </div>
+                            <div class="score d-flex align-items-center justify-content-center"><span>1/12</span></div>
+                        </div>
+                        <hr>
+                        <div class="rating d-flex align-items-center">
+                            <p class="m-0">Great</p>
+                            <div class="stars">
+                                <i class="material-icons">star</i>
+                                <i class="material-icons">star</i>
+                                <i class="material-icons">star</i>
+                                <i class="material-icons">star_half</i>
+                                <i class="material-icons">star_border</i>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <textarea class="form-control" aria-label="With textarea" placeholder="Drag and drop image or enter text"></textarea>
+                        </div>
+
+                        <button class="btn-custom-confirm">Confirm <i class="material-icons">arrow_forward</i></button>
+                        <p>
+                            <a href="#">Back to previous</a>
+                        </p>
+                    </div>
+                    <div class="employee-body"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        $('.your-checkbox').prop('indeterminate', true)
+    </script>
+</body>
+</html>
