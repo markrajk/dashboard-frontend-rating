@@ -157,10 +157,13 @@ body {
             color: #0077ff; }
       .results-body .employee-header hr {
         display: inline-block;
-        width: 50%;
+        width: 37.5rem;
         min-width: 20rem;
         height: 1.5px;
         background-color: rgba(223, 226, 229, 0.87); }
+        @media (max-width: 767px) {
+          .results-body .employee-header hr {
+            width: 80%; } }
       .results-body .employee-header .rating p {
         font-size: 1.7rem;
         font-weight: 700;

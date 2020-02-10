@@ -264,10 +264,16 @@ body {
 
         & hr {
           display: inline-block;
-          width: 50%;
+          width: 37.5rem;
           min-width: 20rem;
           height: 1.5px;
           background-color: rgba(223, 226, 229, 0.87);
+
+
+          @include respond(desktop-sm) {
+            width: 80%;
+          }
+
         }
 
         & .rating {
