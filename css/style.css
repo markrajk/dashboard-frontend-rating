@@ -89,7 +89,8 @@ body {
 .results {
   width: 100%;
   background-color: #f8f9fb;
-  padding: 4.1rem 4.6rem 2.8rem 3.4rem; }
+  padding: 4.1rem 4.6rem 2.8rem 3.4rem;
+  overflow: auto; }
   .results-header .back {
     font-size: 15px;
     font-weight: 700;
