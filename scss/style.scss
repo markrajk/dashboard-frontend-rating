@@ -411,7 +411,8 @@ body {
   }
 
   & label:hover::after,
-  & input:checked ~ label::after {
+  & input:checked ~ label::after,
+  & label:hover ~ label::after {
     opacity: 1;
   }
 }

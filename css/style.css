@@ -256,5 +256,5 @@ body {
       top: 0;
       opacity: 0;
       transition: .3s; }
-  .stars label:hover::after, .stars input:checked ~ label::after {
+  .stars label:hover::after, .stars input:checked ~ label::after, .stars label:hover ~ label::after {
     opacity: 1; }
