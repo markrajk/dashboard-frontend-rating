@@ -290,8 +290,9 @@ body {
           }
         }
 
-        & hr {
+        & .separator-line {
           display: inline-block;
+          margin-bottom: 2.67rem;
           width: 37.5rem;
           min-width: 20rem;
           height: 1.5px;
@@ -349,10 +350,12 @@ body {
           height: 4rem;
           padding: 0 1.6rem;
           font-size: 1.5rem;
+          font-weight: 700;
           background-color: #0077ff;
           color: #FFF;
           border: none;
           border-radius: 5px;
+          margin-bottom: 2rem;
 
           & i {
             font-size: 2.5rem;
@@ -360,7 +363,7 @@ body {
         }
 
         & p {
-          margin-top: 2rem;
+          //margin-top: 2rem;
             a {
             font-size: 1.4rem;
           }
@@ -369,5 +372,57 @@ body {
 
       
     }
+  }
+}
+
+.rating {
+  & {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #1a173b;
+  }
+}
+
+.stars {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse ;
+
+  & input {
+    display: none;
+  }
+
+  & label {
+    display: block;
+    cursor: pointer;
+    width: 3rem;
+
+
+    &::before {
+      content: "\f005";
+      font-family: FontAwesome;
+      position: relative;
+      display: block;
+      font-size: 2.5rem;
+      color: #f3f3f3;
+      
+    }
+
+    &::after {
+      content: "\f005";
+      font-family: FontAwesome;
+      position: absolute;
+      display: block;
+      font-size: 2.5rem;
+      color: #ffbb41;
+      top: 0;
+      opacity: 0;
+      transition: .5s;
+    }
+  }
+
+  & label:hover::after,
+  & input:checked ~ label::after {
+    opacity: 1;
   }
 }
