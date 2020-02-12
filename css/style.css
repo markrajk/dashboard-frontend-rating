@@ -237,24 +237,24 @@ body {
   .stars label {
     display: block;
     cursor: pointer;
-    width: 3rem;
-    color: #C1C1C1; }
+    width: 2.5rem;
+    color: #c3c3c3; }
     .stars label::before {
       content: "\f005";
       font-family: FontAwesome;
       position: relative;
       display: block;
-      font-size: 2.5rem;
+      font-size: 2rem;
       color: #C1C1C1; }
     .stars label::after {
       content: "\f005";
       font-family: FontAwesome;
       position: absolute;
       display: block;
-      font-size: 2.5rem;
+      font-size: 2rem;
       color: #ffbb41;
       top: 0;
       opacity: 0;
-      transition: .5s; }
+      transition: .3s; }
   .stars label:hover::after, .stars input:checked ~ label::after {
     opacity: 1; }
