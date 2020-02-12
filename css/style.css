@@ -153,6 +153,14 @@ body {
       @media (max-width: 1199px) {
         .results-body .employee {
           width: 100%; } }
+      .results-body .employee-header .name {
+        display: inline-block;
+        margin-left: 1.2rem;
+        font-size: 1.8rem;
+        font-weight: bold;
+        line-height: 1.22;
+        letter-spacing: 0.12px;
+        color: #1a173b; }
       .results-body .employee-header-info {
         white-space: nowrap;
         margin-bottom: 1.4rem; }
@@ -160,14 +168,6 @@ body {
           width: 4.8rem;
           height: 4.8rem;
           border-radius: 50%; }
-        .results-body .employee-header-info p {
-          display: inline-block;
-          margin-left: 1.2rem;
-          font-size: 1.8rem;
-          font-weight: bold;
-          line-height: 1.22;
-          letter-spacing: 0.12px;
-          color: #1a173b; }
         .results-body .employee-header-info .score {
           width: 63.1px;
           height: 30px;
@@ -187,16 +187,6 @@ body {
         @media (max-width: 767px) {
           .results-body .employee-header .separator-line {
             width: 80%; } }
-      .results-body .employee-header .rating p {
-        font-size: 1.7rem;
-        font-weight: 700;
-        color: #1a173b; }
-      .results-body .employee-header .rating .stars {
-        margin-left: 3.2rem;
-        margin-bottom: -.4rem; }
-        .results-body .employee-header .rating .stars i {
-          font-size: 3rem;
-          color: #ffbb41; }
       .results-body .employee-header .input-group {
         margin-top: 3rem;
         margin-bottom: 2rem; }
@@ -232,6 +222,11 @@ body {
   font-size: 1.7rem;
   font-weight: 700;
   color: #1a173b; }
+  .rating p {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-right: 3.7rem;
+    margin-bottom: .7rem; }
 
 .stars {
   position: relative;
@@ -242,14 +237,15 @@ body {
   .stars label {
     display: block;
     cursor: pointer;
-    width: 3rem; }
+    width: 3rem;
+    color: #C1C1C1; }
     .stars label::before {
       content: "\f005";
       font-family: FontAwesome;
       position: relative;
       display: block;
       font-size: 2.5rem;
-      color: #f3f3f3; }
+      color: #C1C1C1; }
     .stars label::after {
       content: "\f005";
       font-family: FontAwesome;

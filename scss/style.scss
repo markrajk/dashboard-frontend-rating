@@ -257,6 +257,16 @@ body {
 
       &-header {
 
+        & .name  {
+          display: inline-block;
+          margin-left: 1.2rem;
+          font-size: 1.8rem;
+          font-weight: bold;
+          line-height: 1.22;
+          letter-spacing: 0.12px;
+          color: #1a173b;
+        }
+
         &-info {
           white-space: nowrap;
           margin-bottom: 1.4rem;
@@ -264,16 +274,6 @@ body {
             width: 4.8rem;
             height: 4.8rem;
             border-radius: 50%;
-          }
-
-          p {
-            display: inline-block;
-            margin-left: 1.2rem;
-            font-size: 1.8rem;
-            font-weight: bold;
-            line-height: 1.22;
-            letter-spacing: 0.12px;
-            color: #1a173b;
           }
 
           .score {
@@ -303,25 +303,6 @@ body {
             width: 80%;
           }
 
-        }
-
-        & .rating {
-
-          & p {
-            font-size: 1.7rem;
-            font-weight: 700;
-            color: #1a173b;
-          }
-
-          & .stars {
-            margin-left: 3.2rem;
-            margin-bottom: -.4rem;
-
-            & i {
-              font-size: 3rem;
-              color: #ffbb41;
-            }
-          }
         }
 
         & .input-group {
@@ -380,6 +361,13 @@ body {
     font-size: 1.7rem;
     font-weight: 700;
     color: #1a173b;
+
+    & p {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-right: 3.7rem;
+      margin-bottom: .7rem;
+    }
   }
 }
 
@@ -396,6 +384,7 @@ body {
     display: block;
     cursor: pointer;
     width: 3rem;
+    color: #C1C1C1;
 
 
     &::before {
@@ -404,7 +393,7 @@ body {
       position: relative;
       display: block;
       font-size: 2.5rem;
-      color: #f3f3f3;
+      color: #C1C1C1;
       
     }
 
