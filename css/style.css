@@ -110,7 +110,7 @@ body {
     background-color: #f8f9fb;
     z-index: 500; }
     .results-header .back {
-      font-size: 15px;
+      font-size: 1.5rem;
       color: #1a173b; }
       .results-header .back a {
         color: #1a173b; }
@@ -169,8 +169,8 @@ body {
           height: 4.8rem;
           border-radius: 50%; }
         .results-body .employee-header-info .score {
-          width: 63.1px;
-          height: 30px;
+          width: 6.3rem;
+          height: 3rem;
           border: solid 1.5px #0077ff;
           border-radius: 3px; }
           .results-body .employee-header-info .score span {
